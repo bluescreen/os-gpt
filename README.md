@@ -5,21 +5,30 @@
 ### GPT - Generative Pretrained Transformer
 
 -   Neuronales Netz trainiert durch Reinforcement Learning from Human Feedback (RLHF)
+    ![Neuronales Netz](network.png)
+
 -   LLM - Large Language Model
 -   Große Anzahl an Parametern und Layern
 -   Open Source Models haben ca 7, 13 oder 30 Milliarden Parameter
 -   Viel GPU Computing Power ist notwendig, CPU ist möglich aber eher ungegeignet
 -   Sehr viel Ram notwendig bei großen Modellen
+-   **LLMs sind Energiefresser und nicht nachhaltig!!!**
 
-| Modell | Jahr      | Größe                                     |
-| ------ | --------- | ----------------------------------------- |
-| GPT-1  | 2018      | 117 Millionen                             |
-| GPT-2  | 2019      | 1.5 Milliarden                            |
-| GPT-3  | Juni 2020 | hat ca 175 Milliarden Parameter, 96 Layer |
-| GPT-4  | März 2023 | hat über 100 Billionen Paramter           |
-| GPT-5  | ???       | AGI?                                      |
+### AI / LLM Historie
 
-## Open Source Modelle
+| Modell   | Jahr      | Beschreibung / Parameter Größe                |
+| -------- | --------- | --------------------------------------------- |
+| ELIZA    | 1966      | Simpler Chat Bot mit Pattern Matching in SLIP |
+| Deepblue | 1997      | Schlug den Schachmeister Kasparov             |
+| AlphaGo  | 2016      | Schlug den Go Meister Sedol                   |
+| ...      |           |                                               |
+| GPT-1    | 2018      | 117 Millionen                                 |
+| GPT-2    | 2019      | 1.5 Milliarden                                |
+| GPT-3    | Juni 2020 | hat ca 175 Milliarden Parameter, 96 Layer     |
+| GPT-4    | März 2023 | hat über 1 Billion Parameter (geschätzt???)   |
+| GPT-5    | ???       | AGI?                                          |
+
+## Open Source LLM
 
 -   [LLama (Facebook)](https://github.com/facebookresearch/llama/tree/main)
 -   [Alpaca (Stanford)](https://www.getalpaca.io/)
@@ -30,7 +39,7 @@
 ## Beispiele
 
 Model Repository:
-https://huggingface.co/
+https://huggingface.co
 
 Model Beispiel:
 https://huggingface.co/elinas/vicuna-13b-4bit/tree/main
@@ -89,12 +98,6 @@ Sprache: Englisch
 
 -   git clone https://github.com/LAION-AI/Open-Assistant
 -   DB_PLATFORM=linux/x86_64 docker compose --profile ci up --build --attach-dependencies
-
-## Links:
-
--   https://github.com/ggerganov/llama.cpp
--   https://github.com/nomic-ai/gpt4all
--   https://atlas.nomic.ai/map/gpt4all-j-response-curated
 
 ## Prompts:
 
