@@ -12,6 +12,7 @@
 -   Open Source Models haben ca 7, 13 oder 30 Milliarden Parameter
 -   Viel GPU Computing Power ist notwendig, CPU ist möglich aber eher ungegeignet
 -   Sehr viel Ram notwendig bei großen Modellen
+-   Schätzungsweise 10x facher Energieverbrauch im Vergleich zu einer Google Anfrage
 -   **LLMs sind Energiefresser und nicht nachhaltig!!!**
 
 ### AI / LLM Historie
