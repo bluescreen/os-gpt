@@ -4,15 +4,16 @@
 
 ### GPT - Generative Pretrained Transformer
 
--   Neuronales Netz trainiert durch Reinforcement Learning from Human Feedback (RLHF)
-    ![Neuronales Netz](network.png)
+![Neuronales Netz](network.png)
 
+-   Neuronales Netz trainiert durch Reinforcement Learning from Human Feedback (RLHF)
 -   LLM - Large Language Model
 -   Große Anzahl an Parametern und Layern
 -   Open Source Models haben ca 7, 13 oder 30 Milliarden Parameter
 -   Viel GPU Computing Power ist notwendig, CPU ist möglich aber eher ungegeignet
 -   Sehr viel Ram notwendig bei großen Modellen
--   Schätzungsweise 10x facher Energieverbrauch im Vergleich zu einer Google Anfrage
+-   Kleinere Modelle sind effizienter aber tendieren dazu zu "halluzinieren"
+-   Schätzungsweise **10x facher Energieverbrauch** im Vergleich zu einer Google Anfrage
 -   **LLMs sind Energiefresser und nicht nachhaltig!!!**
 
 ### AI / LLM Historie
@@ -36,6 +37,11 @@
 -   [Vicuna](https://vicuna.lmsys.org/)
 -   [Koala](https://koala.sh/)
 -   [GPT4All](https://github.com/nomic-ai/gpt4all)
+
+## Lizensen
+
+-   Trainingsdaten sind bei den meisten LLM für research only.
+-   Keine kommerzielle Nutzung
 
 ## Beispiele
 
@@ -70,15 +76,15 @@ Sprache: Englisch
 
 ## Parameter
 
-| Parameter      | Beschreibung                                                                      | Default           |
-| -------------- | --------------------------------------------------------------------------------- | ----------------- |
-| model          | Name des Models                                                                   | vicuna, alpaca    |
-| n_predict      | Maximale Anzahl der predict Tokens                                                | 128, -1: infinity |
-| top_k          | Top-K Sampling, Sortierung und nullsetzen ab dem k'ten Token, verhindert Offtopic | 40                |
-| top_p          | Top-P Sampling, Wieviele Token werden in Betracht gezogen für eine Prediction     | 0.9 -> 90 Tokens  |
-| repeat_penalty | Strafwert für Zuviel Wiederholung                                                 | 64                |
-| temp           | Temperature, je höher desto "kreativer" das Modell (> 1 hohe randomness)          | 0.8               |
-| ctx_size       | Context Größe                                                                     | 512               |
+| Parameter      | Beschreibung                                                                           | Default           |
+| -------------- | -------------------------------------------------------------------------------------- | ----------------- |
+| model          | Name des Models                                                                        | vicuna, alpaca    |
+| n_predict      | Maximale Anzahl der predict Tokens                                                     | 128, -1: infinity |
+| top_k          | Top-K Sampling, Sortierung und nullsetzen ab dem k'ten Token, verhindert Offtopic      | 40                |
+| top_p          | Top-P Sampling, Wieviele Token werden in Betracht gezogen für eine Prediction          | 0.9 -> 90 Tokens  |
+| repeat_penalty | Strafwert für Zuviel Wiederholung                                                      | 64                |
+| temp           | Temperature, je höher der Wert desto mehr haluziniert das Modell (> 1 hohe randomness) | 0.8               |
+| ctx_size       | Context Größe                                                                          | 512               |
 
 ## Auto Llama CPP
 
